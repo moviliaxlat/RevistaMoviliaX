@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Media Kit - MOVILIAX</title>
+    <meta name="description" content="Media Kit oficial de MoviliaX. Información para anunciantes, patrocinadores y colaboradores. Audiencia, alcance y oportunidades de publicidad.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --azul-profundo: #0A0F2C;
+            --cian-electrico: #00E0FF;
+            --gris-metalico: #7A7F8C;
+            --blanco: #FFFFFF;
+            --negro-carbon: #0D0D0D;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--azul-profundo);
+            color: var(--blanco);
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 15, 44, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0, 224, 255, 0.1);
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: var(--blanco);
+            text-decoration: none;
+        }
+
+        .logo-x {
+            color: var(--cian-electrico);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { text-shadow: 0 0 10px var(--cian-electrico); }
+            50% { text-shadow: 0 0 20px var(--cian-electrico), 0 0 30px var(--cian-electrico); }
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--blanco);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--cian-electrico);
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 28px;
+            color: var(--cian-electrico);
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #0A0F2C 0%, #1a1f4a 50%, #0A0F2C 100%);
+            margin-top: 70px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-grid {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(0, 224, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 224, 255, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: gridMove 20s linear infinite;
+        }
+
+        @keyframes gridMove {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        .hero-content {
+            text-align: center;
+            z-index: 2;
+            max-width: 900px;
+            padding: 100px 20px 60px;
+        }
+
+        .hero h1 {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 56px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, var(--blanco) 0%, var(--cian-electrico) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: var(--gris-metalico);
+            line-height: 1.6;
+        }
+
+        .download-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 18px 45px;
+            background: linear-gradient(135deg, var(--cian-electrico), #0099cc);
+            color: var(--azul-profundo);
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 50px;
+            transition: all 0.3s;
+            box-shadow: 0 10px 30px rgba(0, 224, 255, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .download-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0, 224, 255, 0.5);
+        }
+
+        /* Content */
+        .content {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 40px;
+        }
+
+        .section-title {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            margin: 60px 0 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 3px;
+            background: var(--cian-electrico);
+            margin: 20px auto 0;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(0, 224, 255, 0.1);
+            border-radius: 15px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--cian-electrico);
+            box-shadow: 0 20px 50px rgba(0, 224, 255, 0.2);
+        }
+
+        .stat-number {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--cian-electrico);
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            color: var(--gris-metalico);
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Audience */
+        .audience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .audience-card {
+            background: linear-gradient(135deg, rgba(0, 224, 255, 0.05), rgba(26, 31, 74, 0.5));
+            border-left: 4px solid var(--cian-electrico);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .audience-card h3 {
+            font-family: 'Exo 2', sans-serif;
+            color: var(--cian-electrico);
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .audience-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .audience-card li {
+            color: var(--gris-metalico);
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .audience-card li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--cian-electrico);
+            font-weight: bold;
+        }
+
+        /* Pricing Table */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .pricing-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 2px solid rgba(0, 224, 255, 0.1);
+            border-radius: 15px;
+            padding: 40px;
+            transition: all 0.4s;
+        }
+
+        .pricing-card:hover {
+            border-color: var(--cian-electrico);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 224, 255, 0.3);
+        }
+
+        .pricing-card.featured {
+            border-color: var(--cian-electrico);
+            background: rgba(0, 224, 255, 0.05);
+        }
+
+        .pricing-tag {
+            display: inline-block;
+            background: var(--cian-electrico);
+            color: var(--azul-profundo);
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .pricing-card h3 {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .pricing-price {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 42px;
+            color: var(--cian-electrico);
+            margin-bottom: 20px;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin: 25px 0;
+        }
+
+        .pricing-features li {
+            padding: 12px 0;
+            color: var(--gris-metalico);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+
+        /* Specs */
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .specs-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(0, 224, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .specs-card h4 {
+            font-family: 'Exo 2', sans-serif;
+            color: var(--cian-electrico);
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+
+        .specs-table {
+            width: 100%;
+        }
+
+        .specs-table td {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .specs-table td:first-child {
+            color: var(--gris-metalico);
+            width: 40%;
+        }
+
+        .specs-table td:last-child {
+            color: var(--blanco);
+            font-weight: 600;
+        }
+
+        /* Contact CTA */
+        .contact-cta {
+            background: linear-gradient(135deg, var(--cian-electrico), #0099cc);
+            padding: 60px 40px;
+            text-align: center;
+            border-radius: 20px;
+            margin: 80px 0;
+        }
+
+        .contact-cta h2 {
+            font-family: 'Exo 2', sans-serif;
+            color: var(--azul-profundo);
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .contact-cta p {
+            color: var(--azul-profundo);
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .contact-button {
+            display: inline-block;
+            padding: 18px 45px;
+            background: var(--azul-profundo);
+            color: var(--cian-electrico);
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 50px;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(10, 15, 44, 0.5);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--negro-carbon);
+            padding: 60px 40px 30px;
+            margin-top: 100px;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            font-family: 'Exo 2', sans-serif;
+            color: var(--cian-electrico);
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: var(--gris-metalico);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--cian-electrico);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(0, 224, 255, 0.1);
+            color: var(--gris-metalico);
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: var(--azul-profundo);
+                flex-direction: column;
+                align-items: center;
+                padding: 40px 20px;
+                gap: 30px;
+                transition: left 0.3s ease-in-out;
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .stat-number {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">MOVILIA<span class="logo-x">X</span></a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Acerca de</a></li>
+                <li><a href="newsletters/index.html">Newsletter</a></li>
+                <li><a href="media-kit.html">Media Kit</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+            <h1>Media Kit MOVILIAX</h1>
+            <p>Conecta tu marca con profesionales, empresas y tomadores de decisión en movilidad, logística e innovación tecnológica en México y América Latina.</p>
+            <a href="#contacto" class="download-button">Solicitar Información</a>
+        </div>
+    </section>
+
+    <div class="content">
+        <!-- Stats -->
+        <h2 class="section-title">Nuestro Alcance</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">50K+</div>
+                <div class="stat-label">Lectores Mensuales</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">15K</div>
+                <div class="stat-label">Suscriptores Newsletter</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">85%</div>
+                <div class="stat-label">Profesionales del Sector</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">4.5 min</div>
+                <div class="stat-label">Tiempo de Lectura Promedio</div>
+            </div>
+        </div>
+
+        <!-- Audience -->
+        <h2 class="section-title">Nuestra Audiencia</h2>
+        <div class="audience-grid">
+            <div class="audience-card">
+                <h3>👔 Perfil Profesional</h3>
+                <ul>
+                    <li>Directores de Logística</li>
+                    <li>Gerentes de Operaciones</li>
+                    <li>CTOs y Directores de Tecnología</li>
+                    <li>Fundadores de Startups</li>
+                    <li>Consultores en Movilidad</li>
+                    <li>Funcionarios Públicos</li>
+                </ul>
+            </div>
+            <div class="audience-card">
+                <h3>🏢 Sectores</h3>
+                <ul>
+                    <li>Transporte y Logística</li>
+                    <li>E-commerce y Retail</li>
+                    <li>Manufactura</li>
+                    <li>Gobierno y Sector Público</li>
+                    <li>Consultoría</li>
+                    <li>Tecnología</li>
+                </ul>
+            </div>
+            <div class="audience-card">
+                <h3>📊 Demografía</h3>
+                <ul>
+                    <li>70% México</li>
+                    <li>30% LATAM</li>
+                    <li>Edad: 28-45 años</li>
+                    <li>68% Género Masculino</li>
+                    <li>32% Género Femenino</li>
+                    <li>Poder de decisión de compra</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Advertising Options -->
+        <h2 class="section-title">Opciones de Publicidad</h2>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="pricing-tag">Newsletter</div>
+                <h3>RADARX Sponsor</h3>
+                <div class="pricing-price">$2,500</div>
+                <p style="color: var(--gris-metalico); margin-bottom: 20px;">Por edición</p>
+                <ul class="pricing-features">
+                    <li>✅ Logo en header</li>
+                    <li>✅ Bloque dedicado (150 palabras)</li>
+                    <li>✅ 15K suscriptores directos</li>
+                    <li>✅ Enlace a tu sitio web</li>
+                    <li>✅ Métricas de apertura y clicks</li>
+                </ul>
+            </div>
+
+            <div class="pricing-card featured">
+                <div class="pricing-tag">Destacado</div>
+                <h3>Artículo Patrocinado</h3>
+                <div class="pricing-price">$4,500</div>
+                <p style="color: var(--gris-metalico); margin-bottom: 20px;">Publicación permanente</p>
+                <ul class="pricing-features">
+                    <li>✅ Artículo completo (800-1200 palabras)</li>
+                    <li>✅ SEO optimizado</li>
+                    <li>✅ Promoción en redes sociales</li>
+                    <li>✅ Inclusión en newsletter</li>
+                    <li>✅ Reportes de tráfico mensuales</li>
+                    <li>✅ Permanece en línea indefinidamente</li>
+                </ul>
+            </div>
+
+            <div class="pricing-card">
+                <div class="pricing-tag">Display</div>
+                <h3>Banner Web</h3>
+                <div class="pricing-price">$1,800</div>
+                <p style="color: var(--gris-metalico); margin-bottom: 20px;">Por mes</p>
+                <ul class="pricing-features">
+                    <li>✅ Banner en sidebar</li>
+                    <li>✅ 50K+ impresiones mensuales</li>
+                    <li>✅ Rotación inteligente</li>
+                    <li>✅ Segmentación por categoría</li>
+                    <li>✅ Reportes semanales</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Packages -->
+        <h2 class="section-title">Paquetes Premium</h2>
+        <div class="specs-grid">
+            <div class="specs-card">
+                <h4>🚀 Paquete Lanzamiento</h4>
+                <table class="specs-table">
+                    <tr>
+                        <td>3 Artículos Patrocinados</td>
+                        <td>$12,000</td>
+                    </tr>
+                    <tr>
+                   
