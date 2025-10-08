@@ -3,37 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
-    <title>MoviliaX - El Futuro de la Movilidad en Movimiento</title>
-    <meta name="description" content="MoviliaX - Revista digital líder en movilidad y logística digital e innovación tecnológica en América Latina. Electromovilidad, ciudades inteligentes y transporte del futuro.">
-    <meta name="keywords" content="movilidad, logística, tecnología, transporte, LATAM, electromovilidad, ciudades inteligentes, vehículos eléctricos, IA transporte">
-    <meta name="author" content="MoviliaX">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://MoviliaX.com/">
-    <meta property="og:title" content="MoviliaX - El Futuro de la Movilidad en Movimiento">
-    <meta property="og:description" content="Explora la nueva experiencia de moverte. El futuro de la movilidad digital, las ciudades inteligentes y la tecnología aplicada al transporte en América Latina">
-    <meta property="og:image" content="https://MoviliaX.com/assets/og-image.jpg">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://MoviliaX.com/">
-    <meta property="twitter:title" content="MoviliaX - El Futuro de la Movilidad en Movimiento">
-    <meta property="twitter:description" content="Explora la nueva experiencia de moverte">
-    <meta property="twitter:image" content="https://MoviliaX.com/assets/og-image.jpg">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
-    
-    <!-- Preconnect for Performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
+    <title>Bienvenidos a MoviliaX: El Futuro de la Movilidad Está en Movimiento</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -47,13 +18,14 @@
             --gris-metalico: #7A7F8C;
             --blanco: #FFFFFF;
             --negro-carbon: #0D0D0D;
+            --violeta-tech: #6B46FF;
         }
 
         body {
             font-family: 'Inter', sans-serif;
             background: var(--azul-profundo);
             color: var(--blanco);
-            overflow-x: hidden;
+            line-height: 1.8;
         }
 
         /* Header */
@@ -62,9 +34,9 @@
             top: 0;
             width: 100%;
             background: rgba(10, 15, 44, 0.95);
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(20px);
             z-index: 1000;
-            border-bottom: 1px solid rgba(0, 224, 255, 0.1);
+            border-bottom: 1px solid rgba(0, 224, 255, 0.2);
         }
 
         nav {
@@ -79,84 +51,52 @@
         .logo {
             font-family: 'Exo 2', sans-serif;
             font-size: 28px;
-            font-weight: 800;
+            font-weight: 900;
             letter-spacing: 2px;
             color: var(--blanco);
+            text-decoration: none;
         }
 
         .logo-x {
             color: var(--cian-electrico);
-            position: relative;
-            display: inline-block;
             animation: pulse 2s ease-in-out infinite;
         }
 
         @keyframes pulse {
             0%, 100% { text-shadow: 0 0 10px var(--cian-electrico); }
-            50% { text-shadow: 0 0 20px var(--cian-electrico), 0 0 30px var(--cian-electrico); }
+            50% { text-shadow: 0 0 30px var(--cian-electrico); }
         }
 
-        .nav-links {
-            display: flex;
-            gap: 40px;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: var(--blanco);
+        .back-home {
+            color: var(--cian-electrico);
             text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s;
-            position: relative;
-        }
-
-        .nav-links a:hover {
-            color: var(--cian-electrico);
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--cian-electrico);
-            transition: width 0.3s;
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-        /* Mobile Menu Toggle */
-        .menu-toggle {
-            display: none;
-            font-size: 28px;
-            color: var(--cian-electrico);
-            cursor: pointer;
-            background: none;
-            border: none;
-            padding: 5px;
-        }
-
-        /* Hero Section */
-        .hero {
-            height: 100vh;
+            font-weight: 600;
             display: flex;
             align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-            background: linear-gradient(135deg, #0A0F2C 0%, #1a1f4a 50%, #0A0F2C 100%);
+            gap: 8px;
+            transition: gap 0.3s;
         }
 
-        .hero-grid {
+        .back-home:hover {
+            gap: 12px;
+        }
+
+        /* Article Hero */
+        .article-hero {
+            margin-top: 80px;
+            padding: 100px 40px 60px;
+            background: linear-gradient(135deg, rgba(0, 224, 255, 0.1), rgba(107, 70, 255, 0.1));
+            position: relative;
+            overflow: hidden;
+        }
+
+        .article-hero::before {
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
+            right: 0;
+            bottom: 0;
             background-image: 
                 linear-gradient(rgba(0, 224, 255, 0.03) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(0, 224, 255, 0.03) 1px, transparent 1px);
@@ -170,104 +110,237 @@
         }
 
         .hero-content {
-            text-align: center;
-            z-index: 2;
             max-width: 900px;
-            padding: 0 20px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 2;
         }
 
-        .hero h1 {
+        .article-category {
+            display: inline-block;
+            padding: 10px 25px;
+            background: linear-gradient(135deg, var(--cian-electrico), var(--violeta-tech));
+            color: var(--azul-profundo);
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+
+        .article-title {
             font-family: 'Exo 2', sans-serif;
-            font-size: 72px;
-            font-weight: 800;
-            margin-bottom: 20px;
-            letter-spacing: 3px;
-            background: linear-gradient(135deg, var(--blanco) 0%, var(--cian-electrico) 100%);
+            font-size: 64px;
+            font-weight: 900;
+            line-height: 1.2;
+            margin-bottom: 30px;
+            background: linear-gradient(135deg, var(--blanco), var(--cian-electrico));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
 
-        .hero-tagline {
+        .article-subtitle {
             font-size: 24px;
             color: var(--gris-metalico);
             margin-bottom: 40px;
             font-weight: 300;
         }
 
-        .cta-button {
-            display: inline-block;
-            padding: 18px 45px;
-            background: linear-gradient(135deg, var(--cian-electrico), #0099cc);
-            color: var(--azul-profundo);
-            text-decoration: none;
+        .article-meta {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            color: var(--gris-metalico);
+            font-size: 15px;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Reading Progress */
+        .reading-progress {
+            position: fixed;
+            top: 80px;
+            left: 0;
+            width: 0%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--cian-electrico), var(--violeta-tech));
+            z-index: 999;
+            transition: width 0.1s ease-out;
+        }
+
+        /* Article Content */
+        .article-container {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 0 40px;
+        }
+
+        .article-content {
+            font-size: 19px;
+            line-height: 1.9;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .article-content p {
+            margin-bottom: 32px;
+        }
+
+        .article-content h2 {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 42px;
+            font-weight: 800;
+            margin: 60px 0 30px;
+            color: var(--cian-electrico);
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .article-content h2::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 5px;
+            height: 60%;
+            background: linear-gradient(to bottom, var(--cian-electrico), var(--violeta-tech));
+            border-radius: 10px;
+        }
+
+        .article-content h3 {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 28px;
             font-weight: 700;
-            border-radius: 50px;
-            transition: all 0.3s;
-            box-shadow: 0 10px 30px rgba(0, 224, 255, 0.3);
+            margin: 40px 0 20px;
+            color: var(--blanco);
+        }
+
+        .lead-paragraph {
+            font-size: 24px;
+            font-weight: 400;
+            color: var(--cian-electrico);
+            margin-bottom: 50px;
+            line-height: 1.7;
+            font-style: italic;
+        }
+
+        .highlight-box {
+            background: rgba(0, 224, 255, 0.05);
+            border-left: 4px solid var(--cian-electrico);
+            padding: 30px 40px;
+            margin: 50px 0;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .highlight-box h4 {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--cian-electrico);
+            margin-bottom: 15px;
+        }
+
+        .stats-inline {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin: 60px 0;
+            padding: 50px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(0, 224, 255, 0.2);
+            border-radius: 20px;
+        }
+
+        .stat-inline {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 48px;
+            font-weight: 900;
+            color: var(--cian-electrico);
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            color: var(--gris-metalico);
+            font-size: 14px;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(0, 224, 255, 0.5);
-        }
-
-        /* Featured Section */
-        .featured {
-            max-width: 1400px;
-            margin: 100px auto;
-            padding: 0 40px;
-        }
-
-        .section-title {
+        .pullquote {
             font-family: 'Exo 2', sans-serif;
-            font-size: 42px;
+            font-size: 32px;
             font-weight: 700;
-            margin-bottom: 60px;
+            line-height: 1.4;
+            color: var(--cian-electrico);
+            margin: 60px 0;
+            padding: 40px 60px;
+            background: rgba(107, 70, 255, 0.1);
+            border-radius: 20px;
             text-align: center;
             position: relative;
         }
 
-        .section-title::after {
-            content: '';
-            display: block;
+        .pullquote::before {
+            content: '"';
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            font-size: 120px;
+            color: var(--violeta-tech);
+            opacity: 0.2;
+        }
+
+        .list-enhanced {
+            list-style: none;
+            margin: 40px 0;
+        }
+
+        .list-enhanced li {
+            padding-left: 40px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .list-enhanced li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--cian-electrico);
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        /* Visual Divider */
+        .visual-divider {
             width: 100px;
-            height: 3px;
-            background: var(--cian-electrico);
-            margin: 20px auto 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--cian-electrico), var(--violeta-tech));
+            margin: 80px auto;
+            border-radius: 10px;
         }
 
-        .articles-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 40px;
-        }
-
-        .article-card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(0, 224, 255, 0.1);
-            border-radius: 15px;
-            overflow: hidden;
-            transition: all 0.4s;
-            cursor: pointer;
-        }
-
-        .article-card:hover {
-            transform: translateY(-10px);
-            border-color: var(--cian-electrico);
-            box-shadow: 0 20px 50px rgba(0, 224, 255, 0.2);
-        }
-
+        /* Image Section */
         .article-image {
-            height: 220px;
+            margin: 60px -80px;
+            height: 500px;
             background: linear-gradient(135deg, #1a1f4a, #0A0F2C);
+            border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 60px;
-            color: var(--cian-electrico);
+            font-size: 150px;
             position: relative;
             overflow: hidden;
         }
@@ -278,7 +351,7 @@
             width: 200%;
             height: 200%;
             background: linear-gradient(45deg, transparent, rgba(0, 224, 255, 0.1), transparent);
-            animation: shine 3s infinite;
+            animation: shine 4s infinite;
         }
 
         @keyframes shine {
@@ -286,151 +359,143 @@
             100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
         }
 
-        .article-content {
-            padding: 30px;
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, rgba(0, 224, 255, 0.1), rgba(107, 70, 255, 0.1));
+            padding: 80px 60px;
+            border-radius: 30px;
+            text-align: center;
+            margin: 80px 0;
         }
 
-        .article-tag {
-            display: inline-block;
-            padding: 6px 15px;
-            background: rgba(0, 224, 255, 0.1);
-            color: var(--cian-electrico);
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 15px;
-        }
-
-        .article-title {
+        .cta-section h3 {
             font-family: 'Exo 2', sans-serif;
-            font-size: 22px;
-            font-weight: 700;
-            margin-bottom: 15px;
-            line-height: 1.4;
-        }
-
-        .article-excerpt {
-            color: var(--gris-metalico);
-            line-height: 1.6;
+            font-size: 42px;
+            font-weight: 900;
             margin-bottom: 20px;
         }
 
-        .read-more {
-            color: var(--cian-electrico);
-            font-weight: 600;
-            text-decoration: none;
+        .cta-section p {
+            font-size: 20px;
+            color: var(--gris-metalico);
+            margin-bottom: 40px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-button {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-            transition: gap 0.3s;
+            gap: 12px;
+            padding: 20px 40px;
+            background: linear-gradient(135deg, var(--cian-electrico), #0099cc);
+            color: var(--azul-profundo);
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 50px;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 15px;
         }
 
-        .read-more:hover {
-            gap: 15px;
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 60px rgba(0, 224, 255, 0.5);
         }
 
-        /* Stats Section */
-        .stats {
-            background: linear-gradient(135deg, rgba(0, 224, 255, 0.05), rgba(26, 31, 74, 0.5));
-            padding: 100px 40px;
-            margin: 100px 0;
+        .cta-secondary {
+            background: transparent;
+            border: 2px solid var(--cian-electrico);
+            color: var(--cian-electrico);
         }
 
-        .stats-grid {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 60px;
+        .cta-secondary:hover {
+            background: rgba(0, 224, 255, 0.1);
+        }
+
+        /* Share Buttons */
+        .share-section {
             text-align: center;
+            margin: 80px 0;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 20px;
         }
 
-        .stat-item {
-            position: relative;
-        }
-
-        .stat-number {
+        .share-section h4 {
             font-family: 'Exo 2', sans-serif;
-            font-size: 56px;
-            font-weight: 800;
+            font-size: 24px;
+            margin-bottom: 25px;
+            color: var(--cian-electrico);
+        }
+
+        .share-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .share-btn {
+            width: 50px;
+            height: 50px;
+            background: rgba(0, 224, 255, 0.1);
+            border: 1px solid rgba(0, 224, 255, 0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .share-btn:hover {
+            background: var(--cian-electrico);
+            transform: translateY(-5px);
+        }
+
+        /* Author Section */
+        .author-section {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(0, 224, 255, 0.1);
+            border-radius: 20px;
+            margin: 80px 0;
+        }
+
+        .author-avatar {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, var(--cian-electrico), var(--violeta-tech));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            flex-shrink: 0;
+        }
+
+        .author-info h4 {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
             color: var(--cian-electrico);
             margin-bottom: 10px;
         }
 
-        .stat-label {
-            font-size: 18px;
+        .author-info p {
             color: var(--gris-metalico);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        /* Newsletter */
-        .newsletter {
-            max-width: 800px;
-            margin: 100px auto;
-            padding: 60px 40px;
-            text-align: center;
-            background: rgba(255, 255, 255, 0.03);
-            border: 2px solid var(--cian-electrico);
-            border-radius: 20px;
-        }
-
-        .newsletter h2 {
-            font-family: 'Exo 2', sans-serif;
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-
-        .newsletter p {
-            color: var(--gris-metalico);
-            margin-bottom: 30px;
-            font-size: 18px;
-        }
-
-        .newsletter-form {
-            display: flex;
-            gap: 15px;
-            max-width: 500px;
-            margin: 0 auto;
-        }
-
-        .newsletter-input {
-            flex: 1;
-            padding: 15px 25px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(0, 224, 255, 0.3);
-            border-radius: 50px;
-            color: var(--blanco);
-            font-size: 16px;
-            outline: none;
-            transition: all 0.3s;
-        }
-
-        .newsletter-input::placeholder {
-            color: var(--gris-metalico);
-        }
-
-        .newsletter-input:focus {
-            border-color: var(--cian-electrico);
-            background: rgba(255, 255, 255, 0.08);
-        }
-
-        .newsletter-button {
-            padding: 15px 35px;
-            background: var(--cian-electrico);
-            color: var(--azul-profundo);
-            border: none;
-            border-radius: 50px;
-            font-weight: 700;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .newsletter-button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 30px rgba(0, 224, 255, 0.4);
+            line-height: 1.6;
+            margin: 0;
         }
 
         /* Footer */
@@ -438,332 +503,285 @@
             background: var(--negro-carbon);
             padding: 60px 40px 30px;
             margin-top: 100px;
-        }
-
-        .footer-content {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-
-        .footer-section h3 {
-            font-family: 'Exo 2', sans-serif;
-            color: var(--cian-electrico);
-            margin-bottom: 20px;
-        }
-
-        .footer-links {
-            list-style: none;
-        }
-
-        .footer-links li {
-            margin-bottom: 10px;
-        }
-
-        .footer-links a {
-            color: var(--gris-metalico);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .footer-links a:hover {
-            color: var(--cian-electrico);
-        }
-
-        .footer-bottom {
             text-align: center;
-            padding-top: 30px;
             border-top: 1px solid rgba(0, 224, 255, 0.1);
+        }
+
+        footer p {
             color: var(--gris-metalico);
         }
 
-        /* Mobile Responsive */
+        /* Responsive */
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 48px;
-            }
-            
-            .hero-tagline {
-                font-size: 18px;
-            }
-            
-            .menu-toggle {
-                display: block;
-            }
-            
-            .nav-links {
-                position: fixed;
-                top: 70px;
-                left: -100%;
-                width: 100%;
-                height: calc(100vh - 70px);
-                background: var(--azul-profundo);
-                flex-direction: column;
-                align-items: center;
-                padding: 40px 20px;
-                gap: 30px;
-                transition: left 0.3s ease-in-out;
-                border-top: 1px solid rgba(0, 224, 255, 0.1);
-            }
-            
-            .nav-links.active {
-                left: 0;
-            }
-            
-            .nav-links li {
-                width: 100%;
-                text-align: center;
-            }
-            
-            .nav-links a {
-                display: block;
-                padding: 15px;
-                font-size: 18px;
-            }
-            
-            .articles-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .newsletter-form {
-                flex-direction: column;
-            }
-            
-            .section-title {
-                font-size: 32px;
-            }
-            
-            .stat-number {
+            .article-title {
                 font-size: 42px;
             }
-        }
 
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 36px;
+            .article-content h2 {
+                font-size: 32px;
             }
-            
-            nav {
-                padding: 15px 20px;
+
+            .article-image {
+                margin: 40px -20px;
+                height: 300px;
+                font-size: 80px;
             }
-            
-            .logo {
+
+            .stats-inline {
+                grid-template-columns: 1fr;
+                padding: 30px;
+            }
+
+            .pullquote {
                 font-size: 24px;
+                padding: 30px 30px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .author-section {
+                flex-direction: column;
+                text-align: center;
             }
         }
     </style>
 </head>
 <body>
+    <div class="reading-progress"></div>
+
     <header>
         <nav>
-            <div class="logo">MOVILIA<span class="logo-x">X</span></div>
-            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú de navegación">☰</button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#articulos">Artículos</a></li>
-                <li><a href="#podcast">Podcast</a></li>
-                <li><a href="#comunidad">Comunidad</a></li>
-                <li><a href="#newsletter">Newsletter</a></li>
-            </ul>
+            <a href="#" class="logo">MOVILIA<span class="logo-x">X</span></a>
+            <a href="#" class="back-home">← Inicio</a>
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-grid"></div>
+    <section class="article-hero">
         <div class="hero-content">
-            <h1>MOVILIA<span class="logo-x">X</span></h1>
-            <p class="hero-tagline">Explora la nueva experiencia de moverte</p>
-            <p style="font-size: 18px; color: var(--gris-metalico); margin-bottom: 40px;">
-                El futuro de la movilidad digital, las ciudades inteligentes y la tecnología aplicada al transporte en América Latina
+            <span class="article-category">✨ Artículo de Lanzamiento</span>
+            <h1 class="article-title">Bienvenidos a MOVILIA<span class="logo-x">X</span></h1>
+            <p class="article-subtitle">El Futuro de la Movilidad Está en Movimiento</p>
+            <div class="article-meta">
+                <span class="meta-item">📅 5 de Octubre, 2025</span>
+                <span class="meta-item">⏱️ 12 min lectura</span>
+                <span class="meta-item">✍️ Equipo Editorial</span>
+            </div>
+        </div>
+    </section>
+
+    <article class="article-container">
+        <div class="article-content">
+            <p class="lead-paragraph">
+                Hoy marca el comienzo de algo extraordinario. Un espacio donde la tecnología, la innovación y el movimiento humano convergen para crear el futuro de cómo nos desplazamos, conectamos y vivimos en nuestras ciudades.
             </p>
-            <a href="#articulos" class="cta-button">Descubre Más</a>
-        </div>
-    </section>
 
-    <section class="featured" id="articulos">
-        <h2 class="section-title">Destacado del Mes</h2>
-        <div class="articles-grid">
-            <article class="article-card">
-                <div class="article-image" aria-label="Electromovilidad">🔋</div>
-                <div class="article-content">
-                    <span class="article-tag">Reportaje Especial</span>
-                    <h3 class="article-title">El Estado de la Movilidad Eléctrica en América Latina 2025</h3>
-                    <p class="article-excerpt">Un análisis profundo de cómo la electromovilidad está transformando el panorama del transporte en la región, con datos exclusivos de inversión y adopción por país.</p>
-                    <a href="#" class="read-more">Leer reportaje →</a>
+            <p>
+                Durante años, hemos observado cómo la conversación sobre movilidad se fragmentaba entre publicaciones generalistas que apenas rozaban la superficie, o contenido técnico inaccesible para la mayoría. América Latina merecía algo diferente. Merecía un medio que hablara su idioma, entendiera su contexto y celebrara su innovación.
+            </p>
+
+            <p>
+                Por eso existe <strong>MoviliaX</strong>.
+            </p>
+
+            <div class="visual-divider"></div>
+
+            <h2>¿Por Qué Ahora?</h2>
+
+            <p>
+                Estamos viviendo la mayor transformación en movilidad desde la invención del automóvil. Los vehículos eléctricos ya no son una promesa futurista: son una realidad cotidiana en las calles de Ciudad de México, Santiago, São Paulo y Bogotá. La inteligencia artificial está optimizando el flujo de tráfico en tiempo real. Las ciudades se están repensando desde cero con sensores IoT y big data.
+            </p>
+
+            <div class="stats-inline">
+                <div class="stat-inline">
+                    <span class="stat-number">2.4M+</span>
+                    <span class="stat-label">Vehículos EV en LATAM</span>
                 </div>
-            </article>
-
-            <article class="article-card">
-                <div class="article-image" aria-label="Inteligencia Artificial">🤖</div>
-                <div class="article-content">
-                    <span class="article-tag">IA en Movimiento</span>
-                    <h3 class="article-title">Gestión de Tráfico Predictiva: El Algoritmo que Anticipa el Caos</h3>
-                    <p class="article-excerpt">Descubre cómo la inteligencia artificial está revolucionando la manera en que las ciudades gestionan el flujo vehicular en tiempo real.</p>
-                    <a href="#" class="read-more">Explorar →</a>
+                <div class="stat-inline">
+                    <span class="stat-number">67%</span>
+                    <span class="stat-label">Crecimiento Anual</span>
                 </div>
-            </article>
-
-            <article class="article-card">
-                <div class="article-image" aria-label="Ciudades Inteligentes">🏙️</div>
-                <div class="article-content">
-                    <span class="article-tag">Ciudades del Futuro</span>
-                    <h3 class="article-title">5 Ciudades LATAM que Están Redefiniendo la Movilidad Urbana</h3>
-                    <p class="article-excerpt">Medellín, Santiago, São Paulo, Ciudad de México y Montevideo lideran la transformación hacia ciudades más inteligentes y conectadas.</p>
-                    <a href="#" class="read-more">Ver ranking →</a>
+                <div class="stat-inline">
+                    <span class="stat-number">$12.5B</span>
+                    <span class="stat-label">Inversión 2024</span>
                 </div>
-            </article>
-        </div>
-    </section>
+            </div>
 
-    <section class="stats">
-        <div class="stats-grid">
-            <div class="stat-item">
-                <div class="stat-number">2M+</div>
-                <div class="stat-label">Vehículos EV en LATAM</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">47%</div>
-                <div class="stat-label">Crecimiento Anual</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">15</div>
-                <div class="stat-label">Ciudades Inteligentes</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">$8.2B</div>
-                <div class="stat-label">Inversión en Tech Mobility</div>
-            </div>
-        </div>
-    </section>
+            <p>
+                Pero aquí está el problema: la mayoría del contenido sobre estos temas está en inglés, enfocado en Silicon Valley o Europa, y desconectado de las realidades, desafíos y oportunidades únicas de nuestra región.
+            </p>
 
-    <section class="newsletter" id="newsletter">
-        <h2>RADAR<span class="logo-x">X</span></h2>
-        <p>Tu dosis semanal de innovación en movilidad. Tendencias, datos exclusivos y lo que está transformando el movimiento en América Latina.</p>
-        <form class="newsletter-form" id="newsletterForm">
-            <input type="email" class="newsletter-input" placeholder="tu@email.com" required aria-label="Email para suscripción">
-            <button type="submit" class="newsletter-button">Suscribirse</button>
-        </form>
-    </section>
+            <div class="pullquote">
+                América Latina no es solo un mercado emergente. Es un laboratorio de innovación donde las soluciones más creativas nacen de las necesidades más urgentes.
+            </div>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>MOVILIA<span class="logo-x">X</span></h3>
-                <p style="color: var(--gris-metalico); line-height: 1.6;">
-                    El punto de conexión entre la movilidad humana y la inteligencia tecnológica.
+            <h2>Nuestra Misión</h2>
+
+            <p>
+                <strong>MoviliaX</strong> nace con una visión clara: ser el punto de conexión entre la movilidad humana y la inteligencia tecnológica en el mundo hispanohablante.
+            </p>
+
+            <div class="highlight-box">
+                <h4>Nuestros Pilares Editoriales:</h4>
+                <ul class="list-enhanced">
+                    <li><strong>Rigor sin Pretensiones:</strong> Análisis profundos con lenguaje accesible</li>
+                    <li><strong>Contexto Latinoamericano:</strong> Historias, datos y perspectivas de nuestra región</li>
+                    <li><strong>Visión de Futuro:</strong> No solo reportamos el presente, anticipamos lo que viene</li>
+                    <li><strong>Impacto Humano:</strong> Detrás de cada tecnología hay personas y comunidades</li>
+                    <li><strong>Comunidad Activa:</strong> Un espacio para profesionales, emprendedores y entusiastas</li>
+                </ul>
+            </div>
+
+            <h2>¿Qué Encontrarás Aquí?</h2>
+
+            <h3>📰 Reportajes Especiales</h3>
+            <p>
+                Investigaciones profundas sobre los temas que están redefiniendo la movilidad. Desde el estado de la infraestructura de carga eléctrica hasta análisis de políticas públicas que están transformando ciudades enteras.
+            </p>
+
+            <h3>🎙️ MoviliaX Talks</h3>
+            <p>
+                Conversaciones exclusivas con los visionarios construyendo el futuro: CEOs de startups, ingenieros de vehículos autónomos, urbanistas diseñando las ciudades del mañana, y funcionarios públicos implementando cambios sistémicos.
+            </p>
+
+            <h3>📊 Datos que Cuentan Historias</h3>
+            <p>
+                Infografías interactivas, dashboards en tiempo real y visualizaciones que transforman números complejos en narrativas comprensibles y accionables.
+            </p>
+
+            <h3>🚀 Ecosistema de Innovación</h3>
+            <p>
+                Perfiles de startups que están disrumpiendo el sector, mapeo de inversionistas, guías de recursos y un directorio vivo del ecosistema tech-mobility en América Latina.
+            </p>
+
+            <div class="article-image">🔋⚡🚗</div>
+
+            <h2>Por Qué América Latina Importa</h2>
+
+            <p>
+                Mientras el mundo debate sobre el futuro de la movilidad en salas de juntas con aire acondicionado, América Latina ya está experimentando, adaptando e innovando en las calles.
+            </p>
+
+            <p>
+                <strong>Medellín</strong> transformó su movilidad con teleféricos que conectan barrios marginados. <strong>Santiago de Chile</strong> opera una de las flotas de buses eléctricos más grandes del mundo. <strong>Ciudad de México</strong> está implementando sistemas de bicicletas compartidas que rivalizan con cualquier ciudad europea. <strong>São Paulo</strong> usa IA para predecir y prevenir accidentes de tráfico.
+            </p>
+
+            <p>
+                Estas no son solo historias inspiradoras. Son casos de estudio de cómo la tecnología puede democratizar el acceso, reducir desigualdades y crear ciudades más vivibles.
+            </p>
+
+            <div class="highlight-box">
+                <h4>💡 Dato Clave:</h4>
+                <p>
+                    Para 2030, se estima que el 40% de los vehículos nuevos vendidos en América Latina serán eléctricos o híbridos. La infraestructura de carga crecerá 15 veces. Y más de 50 ciudades implementarán sistemas integrados de movilidad inteligente.
                 </p>
             </div>
-            <div class="footer-section">
-                <h3>Contenido</h3>
-                <ul class="footer-links">
-                    <li><a href="#">Reportajes Especiales</a></li>
-                    <li><a href="#">Series Temáticas</a></li>
-                    <li><a href="#">Entrevistas</a></li>
-                    <li><a href="#">Podcast</a></li>
-                </ul>
+
+            <h2>Únete al Movimiento</h2>
+
+            <p>
+                <strong>MoviliaX</strong> no es solo una revista digital. Es una comunidad de pensadores, hacedores y soñadores que creen que el futuro de cómo nos movemos puede y debe ser mejor.
+            </p>
+
+            <p>
+                Si eres un profesional del sector buscando estar a la vanguardia, un emprendedor construyendo la próxima gran solución, un estudiante fascinado por las ciudades inteligentes, o simplemente alguien curioso sobre cómo la tecnología está transformando nuestras vidas cotidianas...
+            </p>
+
+            <p>
+                <strong>Este es tu espacio.</strong>
+            </p>
+
+            <div class="visual-divider"></div>
+
+            <p>
+                Publicaremos contenido nuevo cada semana. Lanzaremos nuestro newsletter <strong>RADARX</strong> cada domingo con las tendencias más relevantes. Organizaremos meetups y eventos en las principales ciudades de la región. Y construiremos juntos la red de profesionales en movilidad digital más activa de América Latina.
+            </p>
+
+            <p>
+                El futuro de la movilidad está en movimiento. Y comienza hoy.
+            </p>
+
+            <div class="pullquote">
+                Explora la nueva experiencia de moverte.
             </div>
-            <div class="footer-section">
-                <h3>Comunidad</h3>
-                <ul class="footer-links">
-                    <li><a href="#">MoviliaX Connect</a></li>
-                    <li><a href="#">Eventos</a></li>
-                    <li><a href="#">Colaboradores</a></li>
-                    <li><a href="#">Partners</a></li>
-                </ul>
+
+            <div class="cta-section">
+                <h3>Comienza Tu Viaje con Nosotros</h3>
+                <p>Suscríbete a nuestro newsletter semanal y recibe análisis exclusivos, datos del sector y acceso anticipado a eventos.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="cta-button">
+                        Suscribirme a RADARX
+                        <span>✉️</span>
+                    </a>
+                    <a href="#" class="cta-button cta-secondary">
+                        Explorar Artículos
+                        <span>→</span>
+                    </a>
+                </div>
             </div>
-            <div class="footer-section">
-                <h3>Recursos</h3>
-                <ul class="footer-links">
-                    <li><a href="#">Glosario Tech</a></li>
-                    <li><a href="#">Estudios e Informes</a></li>
-                    <li><a href="#">Guía de Startups</a></li>
-                    <li><a href="#">Media Kit</a></li>
-                </ul>
+
+            <div class="share-section">
+                <h4>Comparte este artículo</h4>
+                <div class="share-buttons">
+                    <a href="#" class="share-btn" title="Twitter">🐦</a>
+                    <a href="#" class="share-btn" title="LinkedIn">💼</a>
+                    <a href="#" class="share-btn" title="Facebook">📘</a>
+                    <a href="#" class="share-btn" title="WhatsApp">💬</a>
+                    <a href="#" class="share-btn" title="Copiar enlace">🔗</a>
+                </div>
+            </div>
+
+            <div class="author-section">
+                <div class="author-avatar">✍️</div>
+                <div class="author-info">
+                    <h4>Equipo Editorial MoviliaX</h4>
+                    <p>
+                        Un equipo multidisciplinario de periodistas, ingenieros, urbanistas y diseñadores apasionados por el futuro de la movilidad en América Latina. Nuestro objetivo: contar las historias que están transformando cómo nos movemos.
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 MoviliaX. El futuro de la movilidad está en movimiento.</p>
-        </div>
+    </article>
+
+    <footer>
+        <p>&copy; 2025 MoviliaX. El futuro de la movilidad está en movimiento.</p>
     </footer>
 
     <script>
-        // Mobile Menu Toggle
-        const menuToggle = document.getElementById('menuToggle');
-        const navLinks = document.getElementById('navLinks');
-
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            menuToggle.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+        // Reading progress bar
+        window.addEventListener('scroll', () => {
+            const article = document.querySelector('.article-container');
+            const progressBar = document.querySelector('.reading-progress');
+            
+            const articleTop = article.offsetTop;
+            const articleHeight = article.offsetHeight;
+            const windowHeight = window.innerHeight;
+            const scrolled = window.scrollY;
+            
+            const progress = ((scrolled - articleTop + windowHeight) / articleHeight) * 100;
+            const clampedProgress = Math.min(Math.max(progress, 0), 100);
+            
+            progressBar.style.width = clampedProgress + '%';
         });
 
-        // Close menu when clicking a link
-        navLinks.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                menuToggle.textContent = '☰';
-            });
-        });
-
-        // Smooth scrolling
+        // Smooth scroll for links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    target.scrollIntoView({ behavior: 'smooth' });
                 }
             });
         });
 
-        // Parallax effect for hero
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const hero = document.querySelector('.hero-content');
-            if (hero && scrolled < 700) {
-                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-                hero.style.opacity = 1 - (scrolled / 700);
-            }
-        });
-
-        // Intersection Observer for fade-in animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.article-card, .stat-item').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'all 0.6s ease-out';
-            observer.observe(el);
-        });
-
-        // Newsletter form handling
-        document.getElementById('newsletterForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            const email = e.target.querySelector('input').value;
-            alert(`¡Gracias por suscribirte a RADARX! Confirma tu correo: ${email}`);
-            e.target.reset();
-        });
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
-                navLinks.classList.remove('active');
-                menuToggle.textContent = '☰';
-            }
-        });
-    </script>
-</body>
-</html>
+        // Share buttons
+        document.querySelectorAll('.share-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const title = document.querySelector('.article-title').textContent;
+                const url = window.location.href;
+                
+                // Simulate share functionality
+                console.log('Compartiendo:', title);
