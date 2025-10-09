@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Media Kit - MOVILIAX | Publicidad y Patrocinios</title>
+    <meta name="description" content="Media Kit oficial de MoviliaX. Descubre oportunidades de publicidad, patrocinio y colaboración con la revista digital líder en movilidad y logística en México.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --azul-profundo: #0A0F2C;
+            --cian-electrico: #00E0FF;
+            --gris-metalico: #7A7F8C;
+            --blanco: #FFFFFF;
+            --negro-carbon: #0D0D0D;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--azul-profundo);
+            color: var(--blanco);
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 15, 44, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0, 224, 255, 0.1);
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: var(--blanco);
+            text-decoration: none;
+        }
+
+        .logo-x {
+            color: var(--cian-electrico);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { text-shadow: 0 0 10px var(--cian-electrico); }
+            50% { text-shadow: 0 0 20px var(--cian-electrico), 0 0 30px var(--cian-electrico); }
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--blanco);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--cian-electrico);
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0A0F2C 0%, #1a1f4a 50%, #0A0F2C 100%);
+            margin-top: 70px;
+        }
+
+        .hero-grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(0, 224, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 224, 255, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: gridMove 20s linear infinite;
+        }
+
+        @keyframes gridMove {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        .hero-content {
+            text-align: center;
+            z-index: 2;
+            max-width: 900px;
+            padding: 100px 20px 60px;
+        }
+
+        .hero h1 {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 52px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, var(--blanco) 0%, var(--cian-electrico) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: var(--gris-metalico);
+            margin-bottom: 30px;
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 18px 45px;
+            background: linear-gradient(135deg, var(--cian-electrico), #0099cc);
+            color: var(--azul-profundo);
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 50px;
+            transition: all 0.3s;
+            box-shadow: 0 10px 30px rgba(0, 224, 255, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .download-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0, 224, 255, 0.5);
+        }
+
+        /* Content */
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 40px;
+        }
+
+        .section {
+            margin-bottom: 80px;
+        }
+
+        .section-title {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 3px;
+            background: var(--cian-electrico);
+            margin: 20px auto 0;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(0, 224, 255, 0.1);
+            border-radius: 15px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .stat-card:hover {
+            border-color: var(--cian-electrico);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 224, 255, 0.2);
+        }
+
+        .stat-number {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--cian-electrico);
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            color: var(--gris-metalico);
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Audience Section */
+        .audience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .audience-card {
+            background: linear-gradient(135deg, rgba(0, 224, 255, 0.05), rgba(26, 31, 74, 0.5));
+            border-radius: 15px;
+            padding: 30px;
+            border: 1px solid rgba(0, 224, 255, 0.1);
+        }
+
+        .audience-card h3 {
+            font-family: 'Exo 2', sans-serif;
+            color: var(--cian-electrico);
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .audience-list {
+            list-style: none;
+            color: var(--gris-metalico);
+            line-height: 2;
+        }
+
+        .audience-list li::before {
+            content: '✓';
+            color: var(--cian-electrico);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* Ad Formats */
+        .formats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .format-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(0, 224, 255, 0.1);
+            border-radius: 15px;
+            padding: 35px;
+            transition: all 0.3s;
+        }
+
+        .format-card:hover {
+            border-color: var(--cian-electrico);
+            box-shadow: 0 10px 30px rgba(0, 224, 255, 0.2);
+        }
+
+        .format-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .format-card h3 {
+            font-family: 'Exo 2', sans-serif;
+            color: var(--cian-electrico);
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .format-card p {
+            color: var(--gris-metalico);
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .format-specs {
+            background: rgba(0, 224, 255, 0.05);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .format-specs strong {
+            color: var(--cian-electrico);
+        }
+
+        /* Pricing */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .pricing-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 2px solid rgba(0, 224, 255, 0.2);
+            border-radius: 15px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .pricing-card:hover {
+            border-color: var(--cian-electrico);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 224, 255, 0.3);
+        }
+
+        .pricing-card.featured {
+            border-color: var(--cian-electrico);
+            background: linear-gradient(135deg, rgba(0, 224, 255, 0.1), rgba(26, 31, 74, 0.5));
+        }
+
+        .pricing-tag {
+            display: inline-block;
+            background: var(--cian-electrico);
+            color: var(--azul-profundo);
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .pricing-title {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 28px;
+            color: var(--cian-electrico);
+            margin-bottom: 20px;
+        }
+
+        .pricing-price {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 42px;
+            font-weight: 800;
+            color: var(--blanco);
+            margin-bottom: 10px;
+        }
+
+        .pricing-period {
+            color: var(--gris-metalico);
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .pricing-features li {
+            color: var(--gris-metalico);
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(0, 224, 255, 0.1);
+        }
+
+        .pricing-features li::before {
+            content: '✓';
+            color: var(--cian-electrico);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* Contact CTA */
+        .contact-cta {
+            background: linear-gradient(135deg, #0A0F2C, #1a1f4a);
+            border: 2px solid var(--cian-electrico);
+            border-radius: 20px;
+            padding: 60px 40px;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .contact-cta h2 {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: var(--cian-electrico);
+        }
+
+        .contact-cta p {
+            color: var(--gris-metalico);
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-item span {
+            font-size: 24px;
+        }
+
+        .contact-item a {
+            color: var(--cian-electrico);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--negro-carbon);
+            padding: 40px;
+            text-align: center;
+            color: var(--gris-metalico);
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .stats-grid,
+            .audience-grid,
+            .formats-grid,
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">MOVILIA<span class="logo-x">X</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Acerca de</a></li>
+                <li><a href="newsletters/index.html">Newsletter</a></li>
+                <li><a href="media-kit.html">Media Kit</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+            <h1>Media Kit 2025</h1>
+            <p>Conecta con líderes de la movilidad y logística en México. Descubre oportunidades de publicidad, patrocinio y colaboración con MoviliaX.</p>
+            <a href="#contacto" class="download-button">Solicitar Información</a>
+        </div>
+    </section>
+
+    <div class="content">
+        <!-- About Section -->
+        <section class="section">
+            <h2 class="section-title">¿Quiénes Somos?</h2>
+            <p style="text-align: center; font-size: 18px; color: var(--gris-metalico); max-width: 800px; margin: 0 auto; line-height: 1.8;">
+                MoviliaX es la revista digital líder en movilidad, logística e innovación tecnológica en México. Conectamos profesionales, empresas y gobiernos mediante contenido de alto valor sobre el futuro del transporte y la logística.
+            </p>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="section">
+            <h2 class="section-title">Nuestro Alcance</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">50K+</div>
+                    <div class="stat-label">Lectores Mensuales</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15K+</div>
+                    <div class="stat-label">Suscriptores RADARX</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">25K+</div>
+                    <div class="stat-label">Seguidores en Redes</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">85%</div>
+                    <div class="stat-label">Tasa de Apertura</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Audience Section -->
+        <section class="section">
+            <h2 class="section-title">Nuestra Audiencia</h2>
+            <div class="audience-grid">
+                <div class="audience-card">
+                    <h3>📊 Demografía</h3>
+                    <ul class="audience-list">
+                        <li>65% Hombres, 35% Mujeres</li>
+                        <li>Edad: 28-45 años (70%)</li>
+                        <li>Ubicación: México (85%)</li>
+                        <li>Nivel educativo: Licenciatura+ (90%)</li>
+                    </ul>
+                </div>
+                <div class="audience-card">
+                    <h3>💼 Profesionales</h3>
+                    <ul class="audience-list">
+                        <li>Directores de Logística</li>
+                        <li>Gerentes de Transporte</li>
+                        <li>Ejecutivos Tech/Startups</li>
+                        <li>Funcionarios Gubernamentales</li>
+                    </ul>
+                </div>
+                <div class="audience-card">
+                    <h3>🏢 Sectores</h3>
+                    <ul class="audience-list">
+                        <li>Logística y Supply Chain</li>
+                        <li>Transporte y Movilidad</li>
+                        <li>Tecnología y Software</li>
+                        <li>Manufactura y Retail</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ad Formats Section -->
+        <section class="section">
+            <h2 class="section-title">Formatos Publicitarios</h2>
+            <div class="formats-grid">
+                <div class="format-card">
+                    <div class="format-icon">📰</div>
+                    <h3>Banner en Sitio Web</h3>
+                    <p>Banners estratégicamente ubicados en nuestra plataforma web con alto engagement de usuarios profesionales.</p>
+                    <div class="format-specs">
+                        <strong>Especificaciones:</strong><br>
+                        • Tamaños: 728x90, 300x250, 970x90<br>
+                        • Formatos: JPG, PNG, GIF, HTML5<br>
+                        • Impresiones: 100K+ mensuales
+                    </div>
+                </div>
+
+                <div class="format-card">
+                    <div class="format-icon">📧</div>
+                    <h3>Patrocinio RADARX</h3>
+                    <p>Presencia destacada en nuestro newsletter semanal RADARX, que llega a 15K+ profesionales de la industria.</p>
+                    <div class="format-specs">
+                        <strong>Incluye:</strong><br>
+                        • Banner superior (600x150px)<br>
+                        • Mención en contenido<br>
+                        • Link a tu sitio<br>
+                        • Tasa de apertura: 85%
+                    </div>
+                </div>
+
+                <div class="format-card">
+                    <div class="format-icon">✍️</div>
+                    <h3>Contenido Patrocinado</h3>
+                    <p>Artículos de calidad editorial sobre tu marca, productos o soluciones, escritos por nuestro equipo experto.</p>
+                    <div class="format-specs">
+                        <strong>Incluye:</strong><br>
+                        • Artículo 800-1200 palabras<br>
+                        • Optimización SEO<br>
+                        • Promoción en redes sociales<br>
+                        • Permanencia indefinida
+                    </div>
+                </div>
+
+                <div class="format-card">
+                    <div class="format-icon">🎙️</div>
+                    <h3>Patrocinio de Podcast</h3>
+                    <p>Menciones en nuestro podcast sobre movilidad y logística, con audiencia altamente especializada.</p>
+                    <div class="format-specs">
+                        <strong>Formatos:</strong><br>
+                        • Pre-roll (15 seg)<br>
+                        • Mid-roll (30 seg)<br>
+                        • Post-roll (15 seg)<br>
+                        • Episodios: 5K+ descargas/episodio
+                    </d
